@@ -8,6 +8,22 @@ public class PizzeriaAdminConsoleApp {
 	
 	public static void main(String[] args) {
 		
+		ListerPizzasService service = new ListerPizzasService();
+		
+		MenuService service2 = new ListerPizzasService();
+		MenuService service3 = new AjouterPizzaService();
+		MenuService service4 = new SupprimerPizzaService();
+		MenuService service5 = new ModifierPizzaService();
+		
+		service.executeUC();
+		
+		service2.executeUC();
+		service3.executeUC();
+		service4.executeUC();
+		service5.executeUC();
+		
+		
+		
 		Pizza [] tableauPizz= new Pizza [8];
 		tableauPizz [0] =new Pizza("PEP","pépéroni", 12.50d);
 		tableauPizz [1] =new Pizza ("MAR", "margherita", 14);
